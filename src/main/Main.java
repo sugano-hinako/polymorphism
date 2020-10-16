@@ -25,9 +25,9 @@ public class Main {
 		System.out.println("▼" + monsters[0].name+ "と" + monsters[1].name+ "  " +"があらわれた！");
 		c[0].attack(monsters[0]);
 		((Wizard) c[1]).fireball(monsters[1]);
-		/*if (c[1] instanceof Wizard) {
-			Wizard w = (Wizard)c[1];
-			c[1].fireball(monsters[1]);
+		/*if (c[1] instanceof Wizard) {//もしc[1]の中身がWizardと見なして大丈夫なら
+			Wizard w = (Wizard)c[1];   //Wizardと見なして
+			c[1].fireball(monsters[1]);//Fireballメソッドを使えるようにしたい
 		}*/
 	}
 
