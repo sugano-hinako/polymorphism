@@ -4,17 +4,17 @@ import monster.Monster;
 public class Hero extends Character{
 	public Hero(String name, int hp) {
 		this.setName(name);
-		this.hp = hp;
+		this.setHp(hp);
 	}
 	public Hero() {
 		this.setName("名なしのスライム");
-		this.hp = 774;
+		this.setHp(774);
 	}
 
 	public void attack(Monster m) {
 		System.out.println(this.getName() + "の攻撃！");
 		System.out.println("▼" + m.getName() + "に10のダメージをあたえた！");
-		m.hp -= 10;
+		m.setHp(m.getHp() - 10);
 	}
 
 }

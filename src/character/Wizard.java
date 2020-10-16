@@ -6,25 +6,25 @@ public class Wizard extends Character{
 
 	public Wizard(String name, int hp, int mp) {
 		this.setName(name);
-		this.hp = hp;
+		this.setHp(hp);
 		this.mp = mp;
 	}
 	public Wizard() {
 		this.setName("名なしの魔術師");
-		this.hp = 774;
+		this.setHp(774);
 		this.mp = 774;
 	}
 
 	public void attack(Monster m) {
 		System.out.println(this.getName() + "の攻撃！");
 		System.out.println("▼" + m.getName() + "に5のダメージ");
-		m.hp -= 5;
+		m.setHp(m.getHp() - 5);
 	}
 
 	public void fireball(Monster m) {
 		System.out.println(this.getName() + "の攻撃！");
 		System.out.println("▼" + m.getName() + "に20のダメージ");
-		m.hp -= 20;
+		m.setHp(m.getHp() - 20);
 		this.mp -= 8;
 	}
 
