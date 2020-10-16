@@ -15,5 +15,8 @@ public class Momonjya_ver2 extends Momonjya{
 		System.out.println("▼" + c.name + "に勢いよくぶつかった！15ダメージをあたえた！");
 		c.hp -= 15;
 	}
+	public void run() {
+		System.out.println(this.name + "はダッシュで逃げ出した！！");
+	}
 
 }
