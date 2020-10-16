@@ -1,4 +1,5 @@
 package monster;
+import character.Character;
 
 public abstract class Monster {
 	public String name;

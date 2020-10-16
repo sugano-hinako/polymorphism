@@ -19,7 +19,4 @@ public class Momonjya extends Monster{
 		System.out.println("▼" + c.name + "に8ダメージあたえた！");
 		c.hp -= 8;
 	}
-	@Override //ここを消すとエラーになってしまう引数なしを用意してもだめ
-	public void attack(java.lang.Character c) {
-	}
 }
