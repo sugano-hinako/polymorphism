@@ -32,6 +32,11 @@ public class Main {
 		w.fireball(m[1]);
 		System.out.println("▼敵のターン");
 		m2.rollOver(c[0]);
+		m[0].attack(c[1]);
+		System.out.println("▼スラリンたちのターン…かと思いきや");
+		m[0].run();
+		m2.run();
+		System.out.println("▼経験値は手に入らなかった(完)");
 
 	}
 
