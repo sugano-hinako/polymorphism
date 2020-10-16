@@ -25,9 +25,9 @@ public class Main {
 		Momonjya_ver2 m2 = (Momonjya_ver2)m[1];
 
 		//冒険スタート
-		System.out.println(c[0].name + "たちは草むらを歩いている");
+		System.out.println(c[0].getName() + "たちは草むらを歩いている");
 		System.out.println("草むらから敵が飛びだしてきた！！");
-		System.out.println("▼" + m[0].name+ "と" + m[1].name+ "  " +"があらわれた！");
+		System.out.println("▼" + m[0].getName()+ "と" + m[1].getName()+ "  " +"があらわれた！");
 		c[0].attack(m[0]);
 		w.fireball(m[1]);
 		System.out.println("▼敵のターン");
